@@ -1,5 +1,7 @@
 # vra-vue
 
+Vue code and demo for <https://github.com/LearnShare/learn-VRA>.
+
 ## Project setup
 ```
 npm install
