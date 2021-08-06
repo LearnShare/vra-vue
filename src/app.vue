@@ -1,5 +1,5 @@
 <template>
-  <DemoEvent />
+  <demo-event />
 </template>
 
 <script>
