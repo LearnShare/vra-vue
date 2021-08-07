@@ -1,6 +1,6 @@
 <template>
-  <HelloWorld msg="HelloWorld"/>
-  <hello-world msg="hello-world"/>
+  <HelloWorld msg="HelloWorld" />
+  <hello-world msg="hello-world" />
   <ni-hao msg="ni-hao"></ni-hao>
   <toggle-button></toggle-button>
 </template>
