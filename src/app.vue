@@ -1,5 +1,8 @@
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <HelloWorld msg="HelloWorld"/>
+  <hello-world msg="hello-world"/>
+  <ni-hao msg="ni-hao"></ni-hao>
+  <toggle-button></toggle-button>
 </template>
 
 <script>
@@ -9,6 +12,7 @@ export default {
   name: 'App',
   components: {
     HelloWorld,
+    'ni-hao': HelloWorld,
   },
 };
 </script>
