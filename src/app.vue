@@ -1,14 +1,14 @@
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <demo-style />
 </template>
 
 <script>
-import HelloWorld from '@/components/hello-world.vue';
+import DemoStyle from '@/components/demo-style.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    DemoStyle,
   },
 };
 </script>
