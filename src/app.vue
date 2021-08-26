@@ -1,14 +1,14 @@
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <demo-func />
 </template>
 
 <script>
-import HelloWorld from '@/components/hello-world.vue';
+import DemoFunc from '@/components/demo-func.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    DemoFunc,
   },
 };
 </script>
