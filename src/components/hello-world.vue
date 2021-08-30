@@ -1,12 +1,22 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <p>{{ muted ? '(muted)' : msg }}</p>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  data() {
+    return {
+      muted: false,
+    };
+  },
   props: {
     msg: String,
+  },
+  methods: {
+    mute() {
+      this.muted = true;
+    },
   },
 };
 </script>
