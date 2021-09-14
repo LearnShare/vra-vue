@@ -1,9 +1,11 @@
 <template>
-  <div class="hello-world"></div>
+  <p>
+    <slot></slot>
+  </p>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'DefaultSlot',
 };
 </script>
