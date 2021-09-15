@@ -31,6 +31,14 @@
     </template>
     <span>123</span>
   </named-slot>
+  <h2>Slot props</h2>
+  <slot-props>
+    <template
+        #default="slotProps">
+      <span>name: {{ slotProps.data.name }}, </span>
+      <span>value: {{ slotProps.data.value }}</span>
+    </template>
+  </slot-props>
 </template>
 
 <script>
@@ -38,6 +46,7 @@ import HelloWorld from './hello-world.vue';
 import DefaultSlot from './default-slot.vue';
 import NamedSlot from './named-slot.vue';
 import DefaultContent from './default-content.vue';
+import SlotProps from './slot-props.vue';
 
 export default {
   name: 'DemoSlot',
@@ -46,6 +55,7 @@ export default {
     DefaultSlot,
     NamedSlot,
     DefaultContent,
+    SlotProps,
   },
 };
 </script>
