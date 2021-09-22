@@ -1,14 +1,14 @@
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <music-player />
 </template>
 
 <script>
-import HelloWorld from '@/components/hello-world.vue';
+import MusicPlayer from '@/components/music-player.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    MusicPlayer,
   },
 };
 </script>
