@@ -1,14 +1,17 @@
 <template>
-  <hello-world msg="Hello World from Vue"/>
+  <page-header />
+  <page-user />
 </template>
 
 <script>
-import HelloWorld from '@/components/hello-world.vue';
+import PageHeader from '@/components/page-header.vue';
+import PageUser from '@/components/page-user.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    PageHeader,
+    PageUser,
   },
 };
 </script>
