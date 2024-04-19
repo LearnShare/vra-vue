@@ -10,3 +10,8 @@ export default {
   },
 };
 </script>
+
+<style
+    scoped
+    lang="scss"
+    src="./hello-world.scss"></style>
