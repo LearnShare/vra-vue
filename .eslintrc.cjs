@@ -1,24 +1,29 @@
 /* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
+require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
   root: true,
-  'extends': [
+  extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
-    '@vue/eslint-config-typescript'
+    '@vue/eslint-config-typescript',
+    'airbnb-base',
   ],
   overrides: [
     {
       files: [
-        'e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'
+        'e2e/**/*.{test,spec}.{js,ts,jsx,tsx}',
       ],
-      'extends': [
-        'plugin:playwright/recommended'
-      ]
-    }
+      extends: [
+        'plugin:playwright/recommended',
+      ],
+    },
   ],
   parserOptions: {
-    ecmaVersion: 'latest'
-  }
-}
+    ecmaVersion: 'latest',
+  },
+  rules: {
+    'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': 'off',
+  },
+};
